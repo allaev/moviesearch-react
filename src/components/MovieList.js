@@ -4,7 +4,7 @@ import MovieItem from './MovieItem';
 
 const MovieList = (props) => {
   const renderedList = props.movies.map((movie) => {
-    return <MovieItem key={movie.id} movie={movie} />;
+    return <MovieItem onMovieSelect={props.onMovieSelect} key={movie.id} movie={movie} />;
   });
 
   return <div>{renderedList}</div>;
