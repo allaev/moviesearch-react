@@ -1,0 +1,15 @@
+.loading {
+  display: none;
+}
+
+.videodetail {
+  margin-top: 10px;
+}
+
+.description span {
+  font-weight: bold;
+}
+
+.description p {
+  display: inline;
+}

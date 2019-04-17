@@ -1,0 +1,23 @@
+.item {
+	max-width: 300px;
+	height: auto;
+	margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: #ebf3f5;
+  padding: 10px 20px;
+}
+
+.item:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.item img {
+  max-height: 160px;
+}
+
+.item p {
+  word-wrap: break-word;
+  width: inherit;
+}

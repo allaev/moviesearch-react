@@ -1,4 +1,5 @@
 import React from 'react';
+import './SearchBar.css';
 
 class SearchBar extends React.Component {
   state = { term: '' };
@@ -14,10 +15,10 @@ class SearchBar extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="searchbar">
         <form onSubmit={this.onFormSubmit}>
           <input value={this.state.term} onChange={this.onInputChange} type="text" placeholder="Enter the movie name" aria-label="Search term" />
-          <button type="submit">Search</button>
+          <button type="submit" className="button">Search</button>
         </form>
       </div>
     )

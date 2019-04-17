@@ -1,0 +1,24 @@
+.wrapper {
+	display: flex;
+	flex-flow: column wrap;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.searchbar input, button {
+  border-radius: 5px;
+  font-size: 110%;
+  border:none;
+  min-height: 40px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.searchbar input[type="text"] {
+  min-width: 500px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #ebf3f5;
+}

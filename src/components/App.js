@@ -25,7 +25,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className='wrapper'>
         <SearchBar onFormSubmit={this.onTermSubmit} />
         <MovieDetail movie={this.state.selectedMovie} />
         <MovieList onMovieSelect={this.onMovieSelect} movies={this.state.movies} />

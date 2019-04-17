@@ -1,8 +1,9 @@
 import React from 'react';
+import './MovieDetail.css';
 
 const MovieDetail = ({ movie }) => {
   if (!movie) {
-    return <div>Loading...</div>
+    return <div className='loading'>Loading...</div>
   }
 
   const reverseDate = (moviedate) => {
@@ -10,13 +11,19 @@ const MovieDetail = ({ movie }) => {
   }
 
   return (
-    <div>
-      <div>
-        <h3>{movie.original_title}</h3>
-        <img src={`https://image.tmdb.org/t/p/w342/${movie.poster_path}`} alt="{movie.title}" />
-        <div>Release Date:</div>
+    <div className="moviedetail">
+      <img src={`https://image.tmdb.org/t/p/w342/${movie.poster_path}`} alt="{movie.title}" />
+      <h1>{movie.title}</h1>
+      <div className="description">
+        <span>Original Title: </span>
+        <p>{movie.original_title}</p>
+      </div>
+      <div className="description">
+        <span>Release Date: </span>
         <p>{reverseDate(movie.release_date)}</p>
-        <div>Overview:</div>
+      </div>
+      <div className="description">
+        <span>Overview: </span>
         <p>{movie.overview}</p>
       </div>
     </div>
